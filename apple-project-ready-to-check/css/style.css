@@ -40,15 +40,15 @@ body {
     font-style: normal;
     font-weight: 400;
     margin: 0;
+    background-color: var(--grey-main);
 }
-/* .container {    
-    max-width: 1460px;
-    min-width: 320px;
-    margin: 0 auto;
-    padding: 0 10px;
-} */
 a {
     text-decoration: none;
+}
+.wrapper {
+    max-width: 1274px;
+    min-width: 320px;
+    margin: 0 auto;
 }
 .img-responsive {
     max-width: 100%;
@@ -63,11 +63,6 @@ a {
     padding: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
-.wrapper {
-    max-width: 1274px;
-    min-width: 320px;
-    margin: 0 auto;
 }
 /* -----------------HEADER START----------------------*/
 .header {
@@ -132,6 +127,7 @@ a {
 }
 .header__menu {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
 }
 .header__menu li {
@@ -213,9 +209,6 @@ a {
 }
 /* ---------------------HEADER END------------------------------------------------------- */
 /* ---------------------MAIN START------------------------------------------------------- */
-.main {
-    background-color: var(--grey-main);    
-}
 .product {
     padding: 197px 30px 39px;
 }
@@ -256,9 +249,6 @@ a {
 }
 /* ---------------------MAIN END------------------------------------------------------- */
 /* ---------------------FOOTER START------------------------------------------------------- */
-.footer {
-    background-color: var(--grey-main);
-}
 .footer__box {
     padding:  40px 0 62px;
     border-top: 1px solid var(--light-grey);    
@@ -428,7 +418,7 @@ a {
 }
 @media (max-width: 767px) {
     .header__body {
-        padding: 9px 25px;
+        padding: 15px 25px;
         justify-content: space-between;
     }
     .header__logo {
@@ -494,7 +484,7 @@ a {
 }
 @media (max-width: 575px) {
     .header__body {
-        padding: 7px 10px;
+        padding: 9px 10px;
         justify-content: space-between;
     }      
     .product {
@@ -547,5 +537,13 @@ a {
     .footer__head {
         font-size: 22px;
         line-height: 1;
+    }
+    .footer__head::before {
+        top: 12px;
+        left: 8px;
+    }
+    .footer__head::after {
+        top: 12px;
+        left: 18px;
     }
 } 
