@@ -52,9 +52,6 @@ body {
 .main {
     background-color: #3F3B3D;
 }
-.form {
-
-}
 .form__body {
     display: flex;
 }
