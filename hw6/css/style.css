@@ -139,17 +139,7 @@ input.input__w30 {
     display: flex;
     justify-content: center;
 }
-.buttons button {
-    display: inline-flex;
-    background-color: #F14814;
-    padding: 10px 30px;
-    border-radius: 3px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    color: whitesmoke;
-    cursor: pointer;
-}
-.buttons button:not(:last-child) {    
+.buttons input:not(:last-child) {    
     margin-right: 15px;
 }
 .required::after {
@@ -160,4 +150,20 @@ input.input__w30 {
     display: inline-block;
     vertical-align: top;
     margin-left: 5px;
+}
+.buttons input {
+    font-family: 'Quicksand', 'Tahoma', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    width: 95px;
+    height: 35px;
+    color: white;
+    background-color: #F14814;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.buttons input:hover {
+    box-shadow: 0 0 5px white;
 }
