@@ -9,159 +9,161 @@
     <title>Contacts</title>    
 </head>
 <body>
-    <header class="header">
-        <div class="wrapper header__body">
-            <h1 class="header__title">Contact manager</h1>
-            <p class="header__text">more actions</p>
-        </div>
-    </header>
-    <main class="main">
-        <div class="wrapper">
-            <form class="form" action="#" method="post">
-                <div class="form__body">
-                    <div class="form__box">
-                        <p>
-                            <label>
-                                <span class="required">First name</span>
-                                <input type="text" name="name" required>
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                <span  class="required">Last name</span>
-                                <input type="text" name="last-name" required>
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                <span>Adress</span>
-                                <textarea name="adress" cols="30" rows="10"></textarea>
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                <span>City</span>
-                                <input type="text" name="city">
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                <span>State</span>
-                                <select name="state">
-                                    <option id="alabama">Alabama</option>
-                                    <option id="connecticut">Connecticut</option>
-                                    <option id="florida">Florida</option>
-                                    <option id="illinois">Illinois</option>
-                                </select>
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                <span class="upper">Zip</span>
-                                <input type="number" name="zip">
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                <span>Home phone</span>
-                                <input  class="input__w30" type="tel" name="home-tel">
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                <span  class="required">Work phone</span>
-                                <input type="tel" name="work-tel" required>
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                <span>Fax number</span>
-                                <input class="input__w30" type="number" name="fax">
-                            </label>
-                        </p>
-                        <div class="website">
-                            <div class="website__title">Website</div>
-                            <div class="website__body">
-                                <p>
-                                    <label>
-                                        <span class="upper">Url</span>
-                                        <input type="text" name="url">
-                                    </label>
-                                </p>
-                                <p>
-                                    <label>
-                                        <span>Link name</span>
-                                        <input type="text" name="link-name">
-                                    </label>
-                                </p>
-                            </div>
-                        </div>
-                        <p>
-                            <label>
-                                <span  class="required">Email adress</span>
-                                <input type="email" name="email" required>
-                            </label>
-                        </p>
-                    </div>
-                    <div class="form__box">
-                        <div class="radio">
-                            <p class="radio__title">
-                                When is the best time to contact you?
+    <div class="wrap">
+        <header class="header">
+            <div class="wrapper header__body">
+                <h1 class="header__title">Contact manager</h1>
+                <p class="header__text">more actions</p>
+            </div>
+        </header>
+        <main class="main">
+            <div class="wrapper">
+                <form class="form" action="#" method="post">
+                    <div class="form__body">
+                        <div class="form__box">
+                            <p>
+                                <label>
+                                    <span class="required">First name</span>
+                                    <input type="text" name="name" required>
+                                </label>
                             </p>
-                            <div class="radio__body">
-                                <p>
-                                    <label>
-                                        <span>Morning</span>
-                                        <input type="radio" name="time" value="morning">
-                                    </label>
-                                </p>
-                                <p>
-                                    <label>
-                                        <span>Afternoon</span>
-                                        <input type="radio" name="time" value="afternoon">
-                                    </label>
-                                </p>
-                                <p>
-                                    <label>
-                                        <span>Evening</span>
-                                        <input type="radio" name="time" value="evening">
-                                    </label>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="radio">
-                            <p class="radio__title">
-                                What is the best way to contact you?
+                            <p>
+                                <label>
+                                    <span  class="required">Last name</span>
+                                    <input type="text" name="last-name" required>
+                                </label>
                             </p>
-                            <div class="radio__body">                              
+                            <p>
                                 <label>
-                                    <span>Phone</span>
-                                    <input type="radio" name="way" value="Phone">
-                                </label>                                
+                                    <span>Adress</span>
+                                    <textarea name="adress" cols="30" rows="10"></textarea>
+                                </label>
+                            </p>
+                            <p>
                                 <label>
-                                    <span>Email</span>
-                                    <input type="radio" name="way" value="Email">
-                                </label>                        
+                                    <span>City</span>
+                                    <input type="text" name="city">
+                                </label>
+                            </p>
+                            <p>
                                 <label>
-                                    <span>Fax</span>
-                                    <input type="radio" name="way" value="Fax">
-                                </label>                                
+                                    <span>State</span>
+                                    <select name="state">
+                                        <option id="alabama">Alabama</option>
+                                        <option id="connecticut">Connecticut</option>
+                                        <option id="florida">Florida</option>
+                                        <option id="illinois">Illinois</option>
+                                    </select>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <span class="upper">Zip</span>
+                                    <input type="number" name="zip">
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <span>Home phone</span>
+                                    <input  class="input__w30" type="tel" name="home-tel">
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <span  class="required">Work phone</span>
+                                    <input type="tel" name="work-tel" required>
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <span>Fax number</span>
+                                    <input class="input__w30" type="number" name="fax">
+                                </label>
+                            </p>
+                            <div class="website">
+                                <div class="website__title">Website</div>
+                                <div class="website__body">
+                                    <p>
+                                        <label>
+                                            <span class="upper">Url</span>
+                                            <input type="text" name="url">
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <span>Link name</span>
+                                            <input type="text" name="link-name">
+                                        </label>
+                                    </p>
+                                </div>
                             </div>
+                            <p>
+                                <label>
+                                    <span  class="required">Email adress</span>
+                                    <input type="email" name="email" required>
+                                </label>
+                            </p>
                         </div>
-                        <p>
-                            <label>
-                                <span>Message</span>
-                                <textarea name="message" cols="30" rows="10"></textarea>
-                            </label>
-                        </p>
+                        <div class="form__box">
+                            <div class="radio">
+                                <p class="radio__title">
+                                    When is the best time to contact you?
+                                </p>
+                                <div class="radio__body">
+                                    <p>
+                                        <label>
+                                            <span>Morning</span>
+                                            <input type="radio" name="time" value="morning">
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <span>Afternoon</span>
+                                            <input type="radio" name="time" value="afternoon">
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <span>Evening</span>
+                                            <input type="radio" name="time" value="evening">
+                                        </label>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="radio">
+                                <p class="radio__title">
+                                    What is the best way to contact you?
+                                </p>
+                                <div class="radio__body">                              
+                                    <label>
+                                        <span>Phone</span>
+                                        <input type="radio" name="way" value="Phone">
+                                    </label>                                
+                                    <label>
+                                        <span>Email</span>
+                                        <input type="radio" name="way" value="Email">
+                                    </label>                        
+                                    <label>
+                                        <span>Fax</span>
+                                        <input type="radio" name="way" value="Fax">
+                                    </label>                                
+                                </div>
+                            </div>
+                            <p>
+                                <label>
+                                    <span>Message</span>
+                                    <textarea name="message" cols="30" rows="10"></textarea>
+                                </label>
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="buttons">
-                    <input type="reset" value="Reset" name="reset">
-                    <input type="submit" value="Submit" name="submit">
-                </div>
-            </form>
-        </div>
-    </main> 
+                    <div class="buttons">
+                        <input type="reset" value="Reset" name="reset">
+                        <input type="submit" value="Submit" name="submit">
+                    </div>
+                </form>
+            </div>
+        </main> 
+    </div>
 </body>
 </html>

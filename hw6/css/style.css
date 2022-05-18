@@ -4,6 +4,10 @@
     padding: 0;
     border: 0;
 }
+html,
+body {
+    height: 100%;
+}
 body {
     font-family: 'Quicksand', 'Tahoma', sans-serif;
     font-style: normal;
@@ -11,7 +15,11 @@ body {
     margin: 0;
     letter-spacing: 0.1em;
     background-color: var(--grey-main);
-    height: auto;
+}
+.wrap {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 .wrapper {
     width: 1000px;
@@ -51,6 +59,7 @@ body {
 /* --------------------------------------------------- */
 .main {
     background-color: #3F3B3D;
+    flex: 1 1 auto;
 }
 .form__body {
     display: flex;
