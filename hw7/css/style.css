@@ -700,7 +700,7 @@ ul .benefits__mob {
 }
 /* ------------------------------------------------------FoOTER-------------------------------- */
 .footer {
-    background-image: url(../img/footer-desk-bg.png);
+    background-image: url(../img/bg/footer-desk-bg.png);
     background-position: center bottom;
     background-repeat: repeat-x;
 }
