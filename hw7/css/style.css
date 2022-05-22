@@ -215,7 +215,7 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(../img/main-bg/main-bg-main.png);
+    background-image: url(../img/bg/main-bg-main.png);
     background-repeat: repeat-x;
     background-size: contain;
     z-index: -3;
@@ -223,7 +223,7 @@ a {
 .main::before {
     display: none;
     content: '';
-    background-image: url(../img/main-bg/main-bg-rectangle.png);
+    background-image: url(../img/bg/main-bg-rectangle.png);
     background-repeat: no-repeat;
     background-position-x: right;
     position: absolute;
