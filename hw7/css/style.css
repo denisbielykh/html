@@ -854,8 +854,10 @@ ul .benefits__mob {
     padding: 0 35px 0 15px;
 }
 .form__name input::placeholder,
+.form__name input::-moz-placeholder,
 .form__name input,
 .form__email input::placeholder,
+.form__email input::-moz-placeholder,
 .form__email input,
 .form__message textarea {
     font-family: 'Inter', 'Tahoma', sans-serif;
@@ -864,6 +866,7 @@ ul .benefits__mob {
     font-size: 18px;
     line-height: 32px;
     color: var(--black);
+    opacity: 1;
 }
 .form__name label,
 .form__email label {
@@ -924,7 +927,8 @@ ul .benefits__mob {
 .form__message textarea::-webkit-scrollbar-track {
     background: transparent;
 }
-.form__message textarea::placeholder {
+.form__message textarea::placeholder,
+.form__message textarea::-moz-placeholder {
     font-family: 'Inter', 'Tahoma', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -932,6 +936,7 @@ ul .benefits__mob {
     line-height: 1.78;
     letter-spacing: 0.2px;
     color: var(--purple);
+    opacity: 1;
 }
 .form__btn {
     width: 32%;
