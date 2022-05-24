@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="preload" href="fonts/red-hat-text-v11-latin-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto-v29-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/icons/logo.svg">
+    <title>Apple Shop</title>    
+</head>
+<body>
+    <header class="header">  
+        <div class="wrapper"> 
+            <div class="header__body">     
+                <a class="header__logo" href="./index.html" aria-label="наш логотип">
+                    <svg width="44" height="52" viewBox="0 0 44 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.0574 15.2636C19.9587 15.2636 16.7099 13 13.2887 13.0818C8.77491 13.1364 4.63491 15.5636 2.30616 19.4091C-2.38009 27.1273 1.09866 38.5273 5.66991 44.8C7.91241 47.8546 10.5574 51.2909 14.0649 51.1818C17.4287 51.0455 18.6937 49.1091 22.7762 49.1091C26.8299 49.1091 27.9799 51.1818 31.5449 51.1C35.1674 51.0455 37.4674 47.9909 39.6812 44.9091C42.2399 41.3636 43.3037 37.9273 43.3612 37.7364C43.2749 37.7091 36.3174 35.1727 36.2312 27.5364C36.1737 21.1546 41.7224 18.1 41.9812 17.9636C38.8187 13.5727 33.9599 13.0818 32.2637 12.9727C27.8362 12.6455 24.1274 15.2636 22.0574 15.2636ZM29.5324 8.82728C31.4012 6.70001 32.6374 3.72728 32.2924 0.78183C29.6187 0.890921 26.3987 2.47274 24.4724 4.60001C22.7474 6.48183 21.2524 9.5091 21.6549 12.4C24.6162 12.6182 27.6637 10.9546 29.5324 8.82728Z" fill="#F5F5F7"/>
+                    </svg>
+                </a>                        
+                <nav class="header__nav">
+                    <a class="header__home" href="./index.html">Home</a>
+                    <ul class="header__menu">
+                        <li><a href="#">iPad</a></li>
+                        <li><a href="#">iPhone</a></li>
+                        <li><a href="#">Watch</a></li>
+                    </ul>
+                </nav>
+                <a class="sign-in" href="#">Sign In</a> 
+                <div class="header__burger" aria-label="кнопка меню">
+                    <span></span>
+                </div>
+            </div>  
+        </div>    
+    </header>
+    <main class="main">
+        <div class="wrapper">
+            <section class="product">
+                <h1 class="product__name">iPhone 12</h1>
+                <div class="product__box">
+                    <picture class="product__img">
+                        <img class="img-responsive" aria-label="картинка товара" src="./img/iphone-12.png" srcset="./img/iphone-12@2x.png 2x" alt="iPhone 12">
+                    </picture>
+                    <ul class="product__description">
+                        <li>6,1 дюйма</li>
+                        <li>Синий</li>
+                        <li>128 гб</li>
+                        <li>1265 $</li>
+                    </ul>                    
+                </div>
+            </section>
+        </div>        
+    </main>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__box">
+                <div class="footer__info">
+                    <div>
+                        <h2 class="footer__head">Shop and Learn</h2>
+                        <ul class="footer__list">
+                            <li><a href="#" class="active" >Mac</a></li>
+                            <li><a href="#">iPad</a></li>
+                            <li><a href="#">iPhone</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="footer__head">Services</h2>
+                        <ul class="footer__list">
+                            <li><a href="#">Apple Music</a></li>
+                            <li><a href="#">Apple TV+</a></li>
+                            <li><a href="#">Apple Fitness+</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="footer__head">Apple Store</h2>
+                        <ul class="footer__list">
+                            <li><a href="#">Find a Store</a></li>
+                            <li><a href="#">Shop Online</a></li>
+                            <li><a href="#">Genius Bar</a></li>
+                            <li><a href="#">Today at Apple</a></li>
+                            <li><a href="#">Apple Camp</a></li>
+                            <li><a href="#">Apple Store App</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
