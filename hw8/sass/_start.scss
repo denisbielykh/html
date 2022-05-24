@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    height: 100%;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 1480px;
+    margin: 0 auto;
+    padding: 0 15px;
+}

@@ -1,0 +1,32 @@
+.main {
+    display: flex;
+    margin-bottom: 130px;
+    & > * {
+        width: 50%;
+    }
+    &__decription {
+        padding: 94px 0 0 120px;
+    }
+    &__title {
+        max-width: 495px;
+        font-family: 'Ramaraja', serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 72px;
+        line-height: 1.06;
+        letter-spacing: 2%;
+        margin-bottom: 10px;
+    }
+    &__text {
+        font-size: 20px;
+        line-height: 1.6;
+        letter-spacing: 0.02em;
+        color: $light-grey;
+        max-width: 538px;
+        margin-bottom: 50px;
+    }
+    &__img {
+        padding-right: 25px;
+        text-align: right;
+    }
+}
