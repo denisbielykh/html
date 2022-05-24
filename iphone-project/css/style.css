@@ -419,8 +419,11 @@ a {
     }
 }
 @media (max-width: 767px) {
+    .header .wrapper {
+        width: 95%;
+    }
     .header__body {
-        padding: 9px 10px;
+        padding: 9px 0;
         justify-content: space-between;
     }
     .header__logo {
@@ -489,6 +492,11 @@ a {
         padding: 7px 10px;
         justify-content: space-between;
     }      
+    .sign-in {
+        padding: 6px 15px;
+        font-size: 20px;
+        line-height: 20px;
+    }
     .product {
         padding: 100px 0 0;
     }      

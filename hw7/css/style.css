@@ -543,6 +543,8 @@ ul .benefits__mob {
 .subscriptions__container {    
     border-radius: 20px;
     width: 100%;
+    position: relative;
+    z-index: 2;
 }
 .subscriptions__container:hover,
 .subscriptions__container.active {
