@@ -1,0 +1,17 @@
+.btn {
+    display: inline-block;
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: $white;
+    background-color: $blue;
+    padding: 18px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    &:hover {
+        color: $black;
+        background-color: $yellow;
+    }
+}

@@ -1,0 +1,26 @@
+.header {
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 66px;
+    &__sign-in {
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 18px 30px;
+        border: none;
+        background: transparent;
+        margin-right: 10px;
+        border-radius: 6px;
+        margin-left: auto;
+        cursor: pointer;
+        &:hover {
+            background-color: $yellow;
+        }
+        &:active {
+            opacity: 0.5;
+        }
+    }
+}

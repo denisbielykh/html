@@ -1,0 +1,22 @@
+.nav {
+    &__menu {
+        display: flex;
+        align-items: center;
+        gap: 38px;
+    }
+    &__link {
+        display: block;
+        font-family: $main-font;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        color: $black;
+        &:hover {
+            color: $purple;
+            transform: scale(1.1, 1.1);
+            transition-duration: 0.25s;
+        }
+    }
+    
+}
