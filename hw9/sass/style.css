@@ -1,0 +1,224 @@
+/* raleway-700 - latin */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/raleway-v27-latin-700.woff2") format("woff2"), url("../fonts/raleway-v27-latin-700.woff") format("woff");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Raleway', 'Tahoma', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1280px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: fixed;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.header {
+  width: 100%;
+  position: relative;
+  margin-bottom: 17px;
+}
+
+.header::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  background-color: #32414b;
+  opacity: .92;
+}
+
+.header .wrapper {
+  padding: 10px;
+  position: relative;
+  min-height: 298px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../img/header-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header__title {
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+  color: white;
+  margin-bottom: 45px;
+  position: relative;
+  z-index: 3;
+}
+
+.header__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 406px;
+  gap: 10px;
+  position: relative;
+  z-index: 3;
+}
+
+.header__link {
+  display: inline-block;
+  text-align: center;
+  min-width: 130px;
+  padding: 7px 14px;
+  color: white;
+  border-radius: 2px;
+}
+
+.header__link_orange {
+  background-color: #F0650D;
+}
+
+.header__link_grey {
+  background-color: #4B5A65;
+}
+
+.header__link:hover, .header__link:focus {
+  opacity: .9;
+}
+
+.header__link:active {
+  opacity: 0.7;
+}
+
+.main-block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (205px)[3];
+      grid-template-rows: repeat(3, 205px);
+  grid-gap: 10px;
+}
+
+.main-block__item {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  padding: 10px;
+}
+
+.main-block__item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #32414b;
+  opacity: .7;
+  z-index: 1;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.main-block__item:nth-child(1) {
+  grid-column: span 2;
+}
+
+.main-block__item:nth-child(5) {
+  grid-column: span 2;
+}
+
+.main-block__item:nth-child(6) {
+  grid-row: span 2;
+}
+
+.main-block__item:hover {
+  color: #F0650D;
+}
+
+.main-block__item:hover::after {
+  opacity: .8;
+}
+
+.main-block__text {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  position: relative;
+  z-index: 2;
+}
+
+.page {
+  background-color: rgba(50, 65, 75, 0.92);
+}
+
+.page .wrapper {
+  background-color: white;
+}
+
+.footer {
+  background-color: rgba(50, 65, 75, 0.92);
+  margin-top: 17px;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.footer__link {
+  color: white;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.footer__link:hover {
+  color: #F0650D;
+}
+/*# sourceMappingURL=style.css.map */
