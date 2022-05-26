@@ -75,6 +75,30 @@ body {
   padding: 0 15px;
 }
 
+@-webkit-keyframes animateborder {
+  0% {
+    background-position: 0%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
+
+@keyframes animateborder {
+  0% {
+    background-position: 0%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
+
 .header {
   padding: 30px 0;
   display: -webkit-box;
@@ -92,17 +116,33 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  padding: 18px 30px;
+  padding: 23px 35px;
   border: none;
-  background: transparent;
+  background: #fff;
   margin-right: 10px;
-  border-radius: 6px;
+  border-radius: 12px;
   margin-left: auto;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.header__sign-in::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 13px;
+  background-image: linear-gradient(45deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  z-index: -1;
 }
 
 .header__sign-in:hover {
-  background-color: yellow;
+  color: #fff;
+  background: transparent;
 }
 
 .header__sign-in:active {
@@ -148,16 +188,34 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
-  color: #fff;
-  background-color: #4F56F1;
+  color: #1B0A42;
+  background-color: #fff;
   padding: 18px 30px;
-  border-radius: 6px;
+  border-radius: 9px;
   cursor: pointer;
+  position: relative;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -5px;
+  left: -5px;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  border-radius: 12px;
+  background-image: linear-gradient(45deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  background-size: 200%;
+  -webkit-animation: animateborder 3s linear infinite;
+          animation: animateborder 3s linear infinite;
 }
 
 .btn:hover {
-  color: #1B0A42;
-  background-color: yellow;
+  color: #fff;
+  background-color: transparent;
 }
 
 .main {
