@@ -39,9 +39,7 @@ body {
     font-family: 'Red Hat Text', 'Tahoma', sans-serif;
     font-style: normal;
     font-weight: 400;
-    margin: 0 auto;
-    max-width: 1440px;
-    min-width: 320px;
+    margin: 0;
 }
 a {
     text-decoration: none;
