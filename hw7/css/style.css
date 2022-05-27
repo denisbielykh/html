@@ -401,7 +401,7 @@ button:active {
 /* -----------------------------------------------------------Delivering -------------------*/
 .delivering {
     margin-top: 170px;
-    padding-bottom: 114px;
+    padding-bottom: 34px;
 }
 .delivering__title {
     font-weight: 700;
@@ -669,7 +669,7 @@ ul .benefits__mob {
 .subscriptions__description li {
     font-weight: 400;
     font-size: 18px;
-    line-height: 1.78;
+    line-height: 40px;
     color: var(--black);
     margin-bottom: 16px;
     position: relative;
@@ -685,7 +685,7 @@ ul .benefits__mob {
     background-position: center center;
     position: absolute;
     left: 0;
-    top: 0;
+    top: 4px;
 }
 .description-month__free li::before {
     background-color: var(--soft-grey);
@@ -1022,11 +1022,12 @@ textarea:focus {
     }
     .subscriptions__description li {
         font-size: 15px;
+        line-height: 1.78;
     }
     .subscriptions__description li::before {
         width: 30px;
         height: 30px;
-        top: -3px;
+        top: -1px;
     }
 }
 @media (max-width: 1167px) {
