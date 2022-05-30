@@ -266,7 +266,7 @@ button:active {
     background-repeat: no-repeat;
     background-position-x: right;
     position: absolute;
-    top: 76px;
+    top: 72px;
     right: 0;
     width: 100%;
     height: 100%;    
@@ -288,7 +288,7 @@ button:active {
 }
 .main__title {
     text-align: center;
-    margin: 0 auto 16px;
+    margin: 0 auto 38px;
     font-style: normal;
     font-weight: 800;
     font-size: 96px;
@@ -322,15 +322,14 @@ button:active {
     max-width: 755px;
     margin: 0 auto 81px;
 }
-.main__arrow {
-    position: absolute;
+.main__arrow {    
+    position: relative;
     bottom: 30px;
     display: none;
     width: 64px;
     height: 64px;
     border-radius: 50%;
     background-color: var(--white);
-    position: relative;
     z-index: 1;
     align-items: center;
     justify-content: center;
@@ -1105,7 +1104,7 @@ textarea:focus {
         border-radius: 7px;    
     }
     .header__body {
-        padding: 16px 0;
+        padding: 14px 0;
     }
     .header__logo > span {
         font-size: 33px;
@@ -1344,12 +1343,9 @@ textarea:focus {
     .main {
         padding-top: 120px;
     }
-    .main::before {
-        top: 0;
-    }
     .main__title {
         font-size: 48px;
-        line-height: 1.17;
+        line-height: 1.2;
     }
     .main__title_combine {
         display: block;
@@ -1366,9 +1362,10 @@ textarea:focus {
     .main__subtitle {
         font-size: 24px;
         max-width: 300px;
+        margin-bottom: 55px;
     }
     .main__arrow {
-        bottom: 42px;
+        bottom: 29px;
     }
     .main__link {
         font-size: 14px;
@@ -1410,6 +1407,9 @@ textarea:focus {
     }
 } 
 @media (max-width: 480px) {
+    .main::before {
+        top: 0;
+    }
     .pricing__title {
         font-size: 32px;
         margin-bottom: 8px;
@@ -1459,6 +1459,7 @@ textarea:focus {
         color: var(--black);
     }
 }
+
 @media (max-width: 340px) {
     .benefits__title {
         font-size: 17px;
