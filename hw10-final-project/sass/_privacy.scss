@@ -1,0 +1,47 @@
+.privacy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 53px;
+    &__copyright {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 27px;
+        color: $grey-op-50;
+    }
+    &__list {
+        display: flex;
+    }    
+    &__item {
+        &:not(:last-child) {
+            margin-right: 25px;
+        }
+    }
+    &__link {
+        font-size: 14px;
+        line-height: 27px;
+        color: $soft-grey;
+        transition: all .2s linear;
+        &:hover {
+            color: $black;
+            text-decoration: underline;
+        }
+        &:active {
+            opacity: 0.5;
+        }
+        &_gdpr {
+            text-transform: uppercase;
+        }
+    }
+}
+
+@media (max-width:991px) {
+    .privacy {
+        padding-top: 15px;
+        flex-direction: column;
+    }
+    &__link {
+        font-size: 12px;
+        line-height: 1;
+    }
+}

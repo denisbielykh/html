@@ -1,0 +1,36 @@
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+    margin: 0 -8px;
+    &__item {
+        &:not(:last-child) {
+            margin-right: 12px;
+        }
+    }
+    &__link {
+        display: block;
+        line-height: 0;
+        border-radius: 5px;
+        padding: 8px;
+        &:hover {
+            background-color: $blue-1-op-90;
+        }
+        &:active {
+            opacity: 0.5;
+        }
+    }
+}
+
+@media (max-width:991px) {
+    .socials {
+        min-width: 310px;
+        justify-content: space-between;
+        &__link {
+            & svg {
+                min-width: 30px;
+                min-height: 30px;
+            }
+        }
+    }
+}

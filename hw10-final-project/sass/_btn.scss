@@ -1,0 +1,43 @@
+.btn {
+    font-family: $main-font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    display: inline-block;           
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    &:hover {
+        background-color: $light-blue;
+    }
+    &:active {
+        opacity: 0.5;
+    }
+    &_blue {
+        color: $main-bg; 
+        background-color: $blue;
+    }
+    &_transparent {
+        color: $soft-grey; 
+        background-color: $main-bg;
+        &:hover {
+            color: $main-bg;
+        }
+    }
+    &_sm {
+        padding: 12px 16px;
+    }
+    &_big {
+        padding: 17px 36px;
+    }
+}
+
+@media (max-width: 475px) {
+    .btn {
+        font-size: 14px;
+        &_big {
+            padding: 10px 20px;
+        }
+    }
+}

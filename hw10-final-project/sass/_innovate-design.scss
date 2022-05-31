@@ -1,0 +1,51 @@
+.innovate-design {
+    padding-top: 12vw;
+    padding-bottom: 49vw;
+    background-color: #FFF9EA;
+    background-image: url(../img/buy-block/buy-bg.png);    
+    background-size: 1600px 535px;
+    background-position: center bottom;
+    background-repeat: repeat-x;
+    margin-bottom: 232px;
+    & .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+     }
+    &__title {
+        font-weight: 500;
+        margin-bottom: 40px;
+    }
+    &__text {
+        font-size: 21px;
+        line-height: 150%;
+        color: #455880;
+        max-width: 397px;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 1154px) {
+    .innovate-design {
+        background-size: contain;
+    }
+}
+@media (max-width:991px)  {
+    .innovate-design {
+        margin-bottom: 130px;
+    }
+}
+@media (max-width:575px)  {
+    .innovate-design {
+        margin-bottom: 70px;
+        &__title {
+            max-width: 300px;
+            margin-bottom: 30px;
+        }
+        &__text {
+            font-size: 16px;
+            max-width: 351px;
+        }
+    }
+}

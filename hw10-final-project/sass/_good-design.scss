@@ -1,0 +1,89 @@
+.good-design {
+    background: linear-gradient(180deg, rgba(242, 249, 255, 0.12) 0%, #F2F9FF 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;   
+    margin-bottom: 186px;
+    &__body {
+        padding: 226px 0 483px;
+        text-align: center;    
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title {
+        max-width: 575px;
+        font-weight: 500;
+        font-size: 56px;
+        line-height: 1.05;
+        color: $dark-purp;
+        margin-bottom: 27px;
+    }
+    &__text {
+        max-width: 800px;
+        line-height: 1.5;
+        text-align: center;
+        color: $dark-purp;
+        margin-bottom: 29px;
+    }
+    &__box {
+        width: 100%;
+        position: relative;
+    }
+    &__buttons {
+        max-width: 368px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    &__img {
+        width: 100%;
+    }
+    &__svg {
+        position: absolute;
+        top: 82px;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 100%;
+        height: auto;
+        padding-left: 3%;
+    }
+}
+
+@media (max-width: 1152px) {
+    .good-design {
+        margin-bottom: 28vw;
+        &__body {
+            padding-top: 21vw;
+            padding-bottom: 42vw ;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .good-design {
+        &__title {
+            max-width: 418px;
+            font-size: 36px;
+        }
+    }
+}
+@media (max-width: 475px) {
+    .good-design {
+        &__title {
+            max-width: 275px;
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+        .good-design__text {
+            font-size: 15px;
+            margin-bottom: 35px;
+        }
+        .good-design__buttons {
+            max-width: 277px;
+        }
+        &__svg {
+            top: 60px;            
+        }
+    }
+}

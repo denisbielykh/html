@@ -1,0 +1,69 @@
+.mob {    
+    display: none;
+    align-items: center;
+    margin-left: auto;
+    &__tel {
+        display: inline-block;
+        position: relative;
+        width: 29px;
+        height: 29px;
+        border-radius: 50%;
+        overflow: hidden;  
+        margin-right: 25px;
+        position: relative;
+        z-index: 3;
+    }
+    &__icon {
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        width: 35px;
+        height: 35px;
+        background-color: $light-blue;
+    }
+    &__burger {
+        width: 30px;
+        height: 20px;
+        position: relative;
+        z-index: 3; 
+        &::before {
+            content: '';
+            width: 100%;
+            height: 2px;
+            background: $dark-purp;
+            position: absolute;
+            left: o;
+            top: 0;
+        }
+        &::after {
+            content: '';
+            width: 100%;
+            height: 2px;
+            background: $dark-purp;
+            position: absolute;
+            left: o;
+            bottom: 0;
+        }
+        & span {
+            width: 100%;
+            height: 2px;
+            background: $dark-purp;
+            position: absolute;
+            left: o;
+            top: 9px;
+        }
+        &:active {
+            &::before,
+            &::after,
+            & span {
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+@media (max-width:991px) {
+    .mob {
+        display: flex;
+    }
+}

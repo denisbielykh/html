@@ -1,0 +1,226 @@
+.peculiarities {
+    margin-bottom: 190px;
+    &__title {
+        max-width: 523px;
+        margin: 0 auto 112px;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__card {
+        width: 100%;
+        display: flex;        
+        justify-content: flex-end;
+        position: relative;
+        margin-bottom: 37px;
+    }
+// ---------------------------------
+    &__pic {
+        position: absolute;
+        &_design {
+            top: -70px;
+            right: 56%;
+            z-index: -8;
+            &::before {
+                content: '';
+                width: 321px;
+                height: 357px;
+                position: absolute;
+                bottom: 0;
+                left: -32px;
+                background-color: $light-purp;
+                border-radius: 5px;
+                z-index: -9;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 54px;
+                right: 3px;
+                width: 62px;
+                height: 64px;               
+                background-color: $soft-blue;
+                border-radius: 5px;
+                z-index: -10;
+            }
+        }
+        &_content {
+            top: 64px;
+            right: 82%;
+            z-index: -6;
+        &::before {
+            content: '';
+            width: 258px;
+            height: 308px;
+            position: absolute;
+            bottom: 0;
+            left: -20px;
+            background-color: $soft-orange;
+            border-radius: 5px;
+            z-index: -7;
+        
+        }
+        &::after {
+            content: '';
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            bottom: -73px;
+            right: -60px;
+            background-color: rgba(250, 207, 202, 1);
+            border-radius: 50%;
+            z-index: 0;
+        }
+        }
+        &_reliable {
+            top: 92px;
+            right: 561px;
+            z-index: -3;
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 195px;
+                height: 200px;
+                z-index: -4;
+                background-color: $pink;
+                border-radius: 5px;
+            }
+            &::after {
+                content: '';
+                width: 67px;
+                height: 71px;
+                position: absolute;
+                top: 60px;
+                left: -60px;
+                background-image: url("data:image/svg+xml,%3Csvg width='63' height='66' viewBox='0 0 63 66' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.89233 65.122L60.028 41.3102C62.857 40.0658 63.2662 36.2201 60.7625 34.4082L14.4726 0.910202C12.0257 -0.860527 8.57421 0.615654 8.16454 3.60816L0.318794 60.918C-0.105354 64.0162 3.02989 66.3811 5.89233 65.122Z' fill='%23F8AEC3'/%3E%3C/svg%3E%0A");
+                background-repeat: no-repeat no-repeat;
+                // background-position: center center;
+                background-size: cover;
+                z-index: -8;
+            }
+        }
+    }
+// --------------------------------
+    &__info {
+        display: flex;
+        padding: 0 34px 0 15px;
+        max-width: 408px;
+        border-bottom: 1px solid rgba(69, 88, 128, 0.2);
+        margin-bottom: 10px;
+    }
+    &__text {
+        margin-left: 45px;
+    }
+    &__subtitle {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 28px;
+        color: $dark-purp;
+        margin-bottom: 31px;
+    }
+    &__description {
+        font-size: 18px;
+        line-height: 27px;
+        color: $soft-grey;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 991px)  {
+    .peculiarities {
+        margin-bottom: 16vw;
+        &__title {
+            max-width: 489px;            
+            margin-bottom: 85px;
+        }
+        &__card {
+            flex-direction: column;
+            align-items: center;
+            border-radius:25px;
+            // box-shadow: inset 0 0 10px 0 ;
+            &_design {
+                border-bottom: 2px solid $light-purp;
+                border-left: 2px solid $light-purp;
+                border-right: 2px solid $light-purp;
+            }
+            &_content {
+                border-bottom: 2px solid $soft-orange;
+                border-left: 2px solid $soft-orange;
+                border-right: 2px solid $soft-orange;
+            }
+            &_reliable {
+                border-bottom: 2px solid $pink;
+                border-left: 2px solid $pink;
+                border-right: 2px solid $pink;
+            }
+        }
+        &__pic {
+            position: static;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 20px;
+            border-radius: 25px 25px 0 0;
+            padding-top: 20px;
+            &_design::before,
+            &_content::before,
+            &_reliable::before,
+            &_design::after,
+            &_content::after,
+            &_reliable::after {
+                display: none;
+            }
+            &_design {
+                background-color: $light-purp;
+            }
+            &_content {
+                background-color: $soft-orange;
+            }
+            &_reliable {
+                background-color: $pink;
+            }
+            & img {
+                max-height: 230px;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .peculiarities {
+        &__title {
+            max-width: 400px;
+            margin-bottom: 60px;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .peculiarities {
+        &__title {  
+            max-width: 302px;           
+            margin-bottom: 40px;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .peculiarities {
+        &__info {
+            border: none;
+            padding: 0 10px;
+        }
+        &__subtitle {
+            margin-bottom: 15px;
+        }
+        &__description {
+            margin-bottom: 20px;
+        }
+        &__text {
+            margin-left: 15px;
+        }
+        &__pic {
+            margin-bottom: 15px;
+        }
+    }
+}

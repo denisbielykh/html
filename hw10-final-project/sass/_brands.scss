@@ -1,0 +1,41 @@
+.brands {
+    text-align: center;
+    margin-bottom: 160px;
+    &__text {
+        font-size: 16px;
+        line-height: 27px;
+        color: $grey-op-50;
+        margin-bottom: 50px;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__item {
+        margin-bottom: 20px;
+    }
+    &__img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .brands {
+        margin-bottom: 15vw;
+        &__text {
+            margin-bottom: 30px;
+        }
+        &__list {
+            margin: 0 -15px;
+        }
+        &__item {
+            width: 33.333%;
+            padding: 0 15px;
+            &:last-child {
+                margin: 0 auto;
+            }
+        }        
+    }    
+}
